@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ID Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>ID Card Generator</h2>
+
+<input id="name" placeholder="Full Name"><br><br>
+<input id="idnumber" placeholder="ID Number"><br><br>
+
+<input type="file" id="photo"><br><br>
+
+<button onclick="generate()">Generate ID</button>
+
+<div id="card">
+
+<h3>Digital ID</h3>
+
+<img id="img">
+
+<p id="username"></p>
+<p id="userid"></p>
+
+<div id="qrcode"></div>
+
+<button onclick="download()">Download ID</button>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</body>
+</html>
